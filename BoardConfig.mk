@@ -113,7 +113,7 @@ BOARD_SUPPRESS_EMMC_WIPE := true
 ENABLE_WEBGL := true
 
 # RIL
-BOARD_USES_LIBSECRIL_STUB := true
+BOARD_RIL_CLASS := ../../../device/samsung/codina/ril/
 
 # Camera
 BOARD_USES_PROPRIETARY_LIBCAMERA := true
