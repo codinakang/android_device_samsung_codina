@@ -13,6 +13,10 @@ PRODUCT_PACKAGES += \
     SamsungServiceMode \
     Torch
 
+# Ace 2 settings
+PRODUCT_PACKAGES += \
+    GalaxyAce2Settings
+
 # alsa-lib
 PRODUCT_PACKAGES += \
     libasound
@@ -109,5 +113,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     system/bluetooth/data/main.le.conf:system/etc/bluetooth/main.conf
 
+# Storage switch script
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/SwapStorages.sh:system/xbin/SwapStorages.sh
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.vold.switchablepair=sdcard0,sdcard1 \
+    persist.sys.vold.switchexternal=0
 
 $(call inherit-product, frameworks/native/build/phone-hdpi-512-dalvik-heap.mk)
