@@ -98,7 +98,8 @@ PRODUCT_PACKAGES += \
 # Keylayout configuration
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/codina-kp.kl:system/usr/keylayout/codina-kp.kl \
-    $(LOCAL_PATH)/configs/sec_touchkey.kl:system/usr/keylayout/sec_touchkey.kl
+    $(LOCAL_PATH)/configs/sec_touchkey.kl:system/usr/keylayout/sec_touchkey.kl \
+    $(LOCAL_PATH)/configs/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl
 
 # Bluetooth configuration files
 PRODUCT_COPY_FILES += \
